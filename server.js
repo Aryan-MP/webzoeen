@@ -83,7 +83,7 @@ async function getUserByUsername(username) {
 // Create user in DynamoDB
 async function createUser(user) {
   const params = {
-    TableName: 'your-dynamodb-table-name',
+    TableName: 'my-dynamodb-table',
     Item: AWS.DynamoDB.Converter.marshall(user)
   };
 
